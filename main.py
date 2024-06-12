@@ -1,11 +1,9 @@
 from typing import List, Tuple
 
 
-def sum_product(numbers: List[int]) -> Tuple[int, int]:
-    """ For a given list of integers, return a tuple consisting of a sum and a product of all the integers in a list.
-    Empty sum should be equal to 0 and empty product should be equal to 1.
-    >>> sum_product([])
-    (0, 1)
-    >>> sum_product([1, 2, 3, 4])
-    (10, 24)
+def rolling_max(numbers: List[int]) -> List[int]:
+    """ From a given list of integers, generate a list of rolling maximum element found until given moment
+    in the sequence.
+    >>> rolling_max([1, 2, 3, 2, 3, 4, 2])
+    [1, 2, 3, 3, 3, 4, 4]
     """
