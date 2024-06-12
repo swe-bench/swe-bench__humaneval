@@ -1,12 +1,12 @@
 
-def encrypt(s):
-    """Create a function encrypt that takes a string as an argument and
-    returns a string encrypted with the alphabet being rotated. 
-    The alphabet should be rotated in a manner such that the letters 
-    shift down by two multiplied to two places.
-    For example:
-    encrypt('hi') returns 'lm'
-    encrypt('asdfghjkl') returns 'ewhjklnop'
-    encrypt('gf') returns 'kj'
-    encrypt('et') returns 'ix'
+def next_smallest(lst):
+    """
+    You are given a list of integers.
+    Write a function next_smallest() that returns the 2nd smallest element of the list.
+    Return None if there is no such element.
+    
+    next_smallest([1, 2, 3, 4, 5]) == 2
+    next_smallest([5, 1, 4, 3, 2]) == 2
+    next_smallest([]) == None
+    next_smallest([1, 1]) == None
     """
