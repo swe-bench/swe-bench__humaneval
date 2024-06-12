@@ -1,9 +1,15 @@
 
 
-def largest_prime_factor(n: int):
-    """Return the largest prime factor of n. Assume n > 1 and is not a prime.
-    >>> largest_prime_factor(13195)
-    29
-    >>> largest_prime_factor(2048)
-    2
+def sum_to_n(n: int):
+    """sum_to_n is a function that sums numbers from 1 to n.
+    >>> sum_to_n(30)
+    465
+    >>> sum_to_n(100)
+    5050
+    >>> sum_to_n(5)
+    15
+    >>> sum_to_n(10)
+    55
+    >>> sum_to_n(1)
+    1
     """
