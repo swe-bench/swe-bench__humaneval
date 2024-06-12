@@ -1,36 +1,12 @@
 
-def max_fill(grid, capacity):
-    import math
+def sort_array(arr):
     """
-    You are given a rectangular grid of wells. Each row represents a single well,
-    and each 1 in a row represents a single unit of water.
-    Each well has a corresponding bucket that can be used to extract water from it, 
-    and all buckets have the same capacity.
-    Your task is to use the buckets to empty the wells.
-    Output the number of times you need to lower the buckets.
+    In this Kata, you have to sort an array of non-negative integers according to
+    number of ones in their binary representation in ascending order.
+    For similar number of ones, sort based on decimal value.
 
-    Example 1:
-        Input: 
-            grid : [[0,0,1,0], [0,1,0,0], [1,1,1,1]]
-            bucket_capacity : 1
-        Output: 6
-
-    Example 2:
-        Input: 
-            grid : [[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]]
-            bucket_capacity : 2
-        Output: 5
-    
-    Example 3:
-        Input: 
-            grid : [[0,0,0], [0,0,0]]
-            bucket_capacity : 5
-        Output: 0
-
-    Constraints:
-        * all wells have the same length
-        * 1 <= grid.length <= 10^2
-        * 1 <= grid[:,1].length <= 10^2
-        * grid[i][j] -> 0 | 1
-        * 1 <= capacity <= 10
+    It must be implemented like this:
+    >>> sort_array([1, 5, 2, 3, 4]) == [1, 2, 3, 4, 5]
+    >>> sort_array([-2, -3, -4, -5, -6]) == [-6, -5, -4, -3, -2]
+    >>> sort_array([1, 0, 2, 3, 4]) [0, 1, 2, 3, 4]
     """
