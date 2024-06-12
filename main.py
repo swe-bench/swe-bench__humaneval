@@ -1,10 +1,10 @@
 
-def words_string(s):
-    """
-    You will be given a string of words separated by commas or spaces. Your task is
-    to split the string into words and return an array of the words.
-    
+def choose_num(x, y):
+    """This function takes two positive numbers x and y and returns the
+    biggest even integer number that is in the range [x, y] inclusive. If 
+    there's no such number, then the function should return -1.
+
     For example:
-    words_string("Hi, my name is John") == ["Hi", "my", "name", "is", "John"]
-    words_string("One, two, three, four, five, six") == ["One", "two", "three", "four", "five", "six"]
+    choose_num(12, 15) = 14
+    choose_num(13, 12) = -1
     """
