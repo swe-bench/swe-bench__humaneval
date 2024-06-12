@@ -1,19 +1,15 @@
 
-def closest_integer(value):
-    '''
-    Create a function that takes a value (string) representing a number
-    and returns the closest integer to it. If the number is equidistant
-    from two integers, round it away from zero.
+def make_a_pile(n):
+    """
+    Given a positive integer n, you have to make a pile of n levels of stones.
+    The first level has n stones.
+    The number of stones in the next level is:
+        - the next odd number if n is odd.
+        - the next even number if n is even.
+    Return the number of stones in each level in a list, where element at index
+    i represents the number of stones in the level (i+1).
 
-    Examples
-    >>> closest_integer("10")
-    10
-    >>> closest_integer("15.3")
-    15
-
-    Note:
-    Rounding away from zero means that if the given number is equidistant
-    from two integers, the one you should return is the one that is the
-    farthest from zero. For example closest_integer("14.5") should
-    return 15 and closest_integer("-14.5") should return -15.
-    '''
+    Examples:
+    >>> make_a_pile(3)
+    [3, 5, 7]
+    """
