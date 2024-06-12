@@ -1,9 +1,19 @@
 
 
-def get_positive(l: list):
-    """Return only positive numbers in the list.
-    >>> get_positive([-1, 2, -4, 5, 6])
-    [2, 5, 6]
-    >>> get_positive([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])
-    [5, 3, 2, 3, 9, 123, 1]
+def is_prime(n):
+    """Return true if a given number is prime, and false otherwise.
+    >>> is_prime(6)
+    False
+    >>> is_prime(101)
+    True
+    >>> is_prime(11)
+    True
+    >>> is_prime(13441)
+    True
+    >>> is_prime(61)
+    True
+    >>> is_prime(4)
+    False
+    >>> is_prime(1)
+    False
     """
