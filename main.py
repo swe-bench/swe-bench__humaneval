@@ -1,8 +1,9 @@
-from typing import List
 
 
-def all_prefixes(string: str) -> List[str]:
-    """ Return list of all prefixes from shortest to longest of the input string
-    >>> all_prefixes('abc')
-    ['a', 'ab', 'abc']
+def string_sequence(n: int) -> str:
+    """ Return a string containing space-delimited numbers starting from 0 upto n inclusive.
+    >>> string_sequence(0)
+    '0'
+    >>> string_sequence(5)
+    '0 1 2 3 4 5'
     """
