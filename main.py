@@ -1,15 +1,14 @@
 
-def file_name_check(file_name):
-    """Create a function which takes a string representing a file's name, and returns
-    'Yes' if the the file's name is valid, and returns 'No' otherwise.
-    A file's name is considered to be valid if and only if all the following conditions 
-    are met:
-    - There should not be more than three digits ('0'-'9') in the file's name.
-    - The file's name contains exactly one dot '.'
-    - The substring before the dot should not be empty, and it starts with a letter from 
-    the latin alphapet ('a'-'z' and 'A'-'Z').
-    - The substring after the dot should be one of these: ['txt', 'exe', 'dll']
+
+
+def sum_squares(lst):
+    """"
+    This function will take a list of integers. For all entries in the list, the function shall square the integer entry if its index is a 
+    multiple of 3 and will cube the integer entry if its index is a multiple of 4 and not a multiple of 3. The function will not 
+    change the entries in the list whose indexes are not a multiple of 3 or 4. The function shall then return the sum of all entries. 
+    
     Examples:
-    file_name_check("example.txt") # => 'Yes'
-    file_name_check("1example.dll") # => 'No' (the name should start with a latin alphapet letter)
+    For lst = [1,2,3] the output should be 6
+    For lst = []  the output should be 0
+    For lst = [-1,-5,2,-1,-5]  the output should be -126
     """
