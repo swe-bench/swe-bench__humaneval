@@ -1,16 +1,17 @@
 
+FIX = """
+Add more test cases.
+"""
 
-def fibfib(n: int):
-    """The FibFib number sequence is a sequence similar to the Fibbonacci sequnece that's defined as follows:
-    fibfib(0) == 0
-    fibfib(1) == 0
-    fibfib(2) == 1
-    fibfib(n) == fibfib(n-1) + fibfib(n-2) + fibfib(n-3).
-    Please write a function to efficiently compute the n-th element of the fibfib number sequence.
-    >>> fibfib(1)
-    0
-    >>> fibfib(5)
-    4
-    >>> fibfib(8)
-    24
+def vowels_count(s):
+    """Write a function vowels_count which takes a string representing
+    a word as input and returns the number of vowels in the string.
+    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a
+    vowel, but only when it is at the end of the given word.
+
+    Example:
+    >>> vowels_count("abcde")
+    2
+    >>> vowels_count("ACEDY")
+    3
     """
