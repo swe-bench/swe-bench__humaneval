@@ -1,10 +1,14 @@
 
-def circular_shift(x, shift):
-    """Circular shift the digits of the integer x, shift the digits right by shift
-    and return the result as a string.
-    If shift > number of digits, return digits reversed.
-    >>> circular_shift(12, 1)
-    "21"
-    >>> circular_shift(12, 2)
-    "12"
+def digitSum(s):
+    """Task
+    Write a function that takes a string as input and returns the sum of the upper characters only'
+    ASCII codes.
+
+    Examples:
+        digitSum("") => 0
+        digitSum("abAB") => 131
+        digitSum("abcCd") => 67
+        digitSum("helloE") => 69
+        digitSum("woArBld") => 131
+        digitSum("aAaaaXa") => 153
     """
