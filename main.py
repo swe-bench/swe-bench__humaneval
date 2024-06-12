@@ -1,26 +1,12 @@
 
-def do_algebra(operator, operand):
-    """
-    Given two lists operator, and operand. The first list has basic algebra operations, and 
-    the second list is a list of integers. Use the two given lists to build the algebric 
-    expression and return the evaluation of this expression.
-
-    The basic algebra operations:
-    Addition ( + ) 
-    Subtraction ( - ) 
-    Multiplication ( * ) 
-    Floor division ( // ) 
-    Exponentiation ( ** ) 
-
-    Example:
-    operator['+', '*', '-']
-    array = [2, 3, 4, 5]
-    result = 2 + 3 * 4 - 5
-    => result = 9
-
-    Note:
-        The length of operator list is equal to the length of operand list minus one.
-        Operand is a list of of non-negative integers.
-        Operator list has at least one operator, and operand list has at least two operands.
-
+def solve(s):
+    """You are given a string s.
+    if s[i] is a letter, reverse its case from lower to upper or vise versa, 
+    otherwise keep it as it is.
+    If the string contains no letters, reverse the string.
+    The function should return the resulted string.
+    Examples
+    solve("1234") = "4321"
+    solve("ab") = "AB"
+    solve("#a@C") = "#A@c"
     """
