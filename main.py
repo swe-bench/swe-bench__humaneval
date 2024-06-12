@@ -1,16 +1,16 @@
 
-def get_closest_vowel(word):
-    """You are given a word. Your task is to find the closest vowel that stands between 
-    two consonants from the right side of the word (case sensitive).
-    
-    Vowels in the beginning and ending doesn't count. Return empty string if you didn't
-    find any vowel met the above condition. 
+def match_parens(lst):
+    '''
+    You are given a list of two strings, both strings consist of open
+    parentheses '(' or close parentheses ')' only.
+    Your job is to check if it is possible to concatenate the two strings in
+    some order, that the resulting string will be good.
+    A string S is considered to be good if and only if all parentheses in S
+    are balanced. For example: the string '(())()' is good, while the string
+    '())' is not.
+    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.
 
-    You may assume that the given string contains English letter only.
-
-    Example:
-    get_closest_vowel("yogurt") ==> "u"
-    get_closest_vowel("FULL") ==> "U"
-    get_closest_vowel("quick") ==> ""
-    get_closest_vowel("ab") ==> ""
-    """
+    Examples:
+    match_parens(['()(', ')']) == 'Yes'
+    match_parens([')', ')']) == 'No'
+    '''
