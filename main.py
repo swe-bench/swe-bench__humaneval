@@ -1,16 +1,26 @@
 
-def match_parens(lst):
-    '''
-    You are given a list of two strings, both strings consist of open
-    parentheses '(' or close parentheses ')' only.
-    Your job is to check if it is possible to concatenate the two strings in
-    some order, that the resulting string will be good.
-    A string S is considered to be good if and only if all parentheses in S
-    are balanced. For example: the string '(())()' is good, while the string
-    '())' is not.
-    Return 'Yes' if there's a way to make a good string, and return 'No' otherwise.
+def maximum(arr, k):
+    """
+    Given an array arr of integers and a positive integer k, return a sorted list 
+    of length k with the maximum k numbers in arr.
 
-    Examples:
-    match_parens(['()(', ')']) == 'Yes'
-    match_parens([')', ')']) == 'No'
-    '''
+    Example 1:
+
+        Input: arr = [-3, -4, 5], k = 3
+        Output: [-4, -3, 5]
+
+    Example 2:
+
+        Input: arr = [4, -4, 4], k = 2
+        Output: [4, 4]
+
+    Example 3:
+
+        Input: arr = [-3, 2, 1, 2, -1, -2, 1], k = 1
+        Output: [2]
+
+    Note:
+        1. The length of the array will be in the range of [1, 1000].
+        2. The elements in the array will be in the range of [-1000, 1000].
+        3. 0 <= k <= len(arr)
+    """
