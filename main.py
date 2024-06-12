@@ -1,19 +1,12 @@
 
-def will_it_fly(q,w):
-    '''
-    Write a function that returns True if the object q will fly, and False otherwise.
-    The object q will fly if it's balanced (it is a palindromic list) and the sum of its elements is less than or equal the maximum possible weight w.
+def smallest_change(arr):
+    """
+    Given an array arr of integers, find the minimum number of elements that
+    need to be changed to make the array palindromic. A palindromic array is an array that
+    is read the same backwards and forwards. In one change, you can change one element to any other element.
 
-    Example:
-    will_it_fly([1, 2], 5) ➞ False 
-    # 1+2 is less than the maximum possible weight, but it's unbalanced.
-
-    will_it_fly([3, 2, 3], 1) ➞ False
-    # it's balanced, but 3+2+3 is more than the maximum possible weight.
-
-    will_it_fly([3, 2, 3], 9) ➞ True
-    # 3+2+3 is less than the maximum possible weight, and it's balanced.
-
-    will_it_fly([3], 5) ➞ True
-    # 3 is less than the maximum possible weight, and it's balanced.
-    '''
+    For example:
+    smallest_change([1,2,3,5,4,7,9,6]) == 4
+    smallest_change([1, 2, 3, 4, 3, 2, 2]) == 1
+    smallest_change([1, 2, 3, 2, 1]) == 0
+    """
