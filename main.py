@@ -1,12 +1,12 @@
 
-def strange_sort_list(lst):
+def triangle_area(a, b, c):
     '''
-    Given list of integers, return list in strange order.
-    Strange sorting, is when you start with the minimum value,
-    then maximum of the remaining integers, then minimum and so on.
-
-    Examples:
-    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]
-    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]
-    strange_sort_list([]) == []
+    Given the lengths of the three sides of a triangle. Return the area of
+    the triangle rounded to 2 decimal points if the three sides form a valid triangle. 
+    Otherwise return -1
+    Three sides make a valid triangle when the sum of any two sides is greater 
+    than the third side.
+    Example:
+    triangle_area(3, 4, 5) == 6.00
+    triangle_area(1, 2, 10) == -1
     '''
