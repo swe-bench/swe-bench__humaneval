@@ -1,12 +1,12 @@
 
-def search(lst):
+def strange_sort_list(lst):
     '''
-    You are given a non-empty list of positive integers. Return the greatest integer that is greater than 
-    zero, and has a frequency greater than or equal to the value of the integer itself. 
-    The frequency of an integer is the number of times it appears in the list.
-    If no such a value exist, return -1.
+    Given list of integers, return list in strange order.
+    Strange sorting, is when you start with the minimum value,
+    then maximum of the remaining integers, then minimum and so on.
+
     Examples:
-        search([4, 1, 2, 2, 3, 1]) == 2
-        search([1, 2, 2, 3, 3, 3, 4, 4, 4]) == 3
-        search([5, 5, 4, 4, 4]) == -1
+    strange_sort_list([1, 2, 3, 4]) == [1, 4, 2, 3]
+    strange_sort_list([5, 5, 5, 5]) == [5, 5, 5, 5]
+    strange_sort_list([]) == []
     '''
