@@ -1,15 +1,15 @@
 
 
-def sum_to_n(n: int):
-    """sum_to_n is a function that sums numbers from 1 to n.
-    >>> sum_to_n(30)
-    465
-    >>> sum_to_n(100)
-    5050
-    >>> sum_to_n(5)
-    15
-    >>> sum_to_n(10)
-    55
-    >>> sum_to_n(1)
-    1
+def correct_bracketing(brackets: str):
+    """ brackets is a string of "(" and ")".
+    return True if every opening bracket has a corresponding closing bracket.
+
+    >>> correct_bracketing("(")
+    False
+    >>> correct_bracketing("()")
+    True
+    >>> correct_bracketing("(()())")
+    True
+    >>> correct_bracketing(")(()")
+    False
     """
