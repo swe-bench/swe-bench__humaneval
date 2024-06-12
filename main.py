@@ -1,9 +1,16 @@
+from typing import List
 
 
-def count_distinct_characters(string: str) -> int:
-    """ Given a string, find out how many distinct characters (regardless of case) does it consist of
-    >>> count_distinct_characters('xyzXYZ')
-    3
-    >>> count_distinct_characters('Jerry')
-    4
+def parse_music(music_string: str) -> List[int]:
+    """ Input to this function is a string representing musical notes in a special ASCII format.
+    Your task is to parse this string and return list of integers corresponding to how many beats does each
+    not last.
+
+    Here is a legend:
+    'o' - whole note, lasts four beats
+    'o|' - half note, lasts two beats
+    '.|' - quater note, lasts one beat
+
+    >>> parse_music('o o| .| o| o| .| .| .| .| o o')
+    [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]
     """
