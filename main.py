@@ -1,13 +1,14 @@
 
-def is_simple_power(x, n):
-    """Your task is to write a function that returns true if a number x is a simple
-    power of n and false in other cases.
-    x is a simple power of n if n**int=x
-    For example:
-    is_simple_power(1, 4) => true
-    is_simple_power(2, 2) => true
-    is_simple_power(8, 2) => true
-    is_simple_power(3, 2) => false
-    is_simple_power(3, 1) => false
-    is_simple_power(5, 3) => false
-    """
+def iscube(a):
+    '''
+    Write a function that takes an integer a and returns True 
+    if this ingeger is a cube of some integer number.
+    Note: you may assume the input is always valid.
+    Examples:
+    iscube(1) ==> True
+    iscube(2) ==> False
+    iscube(-1) ==> True
+    iscube(64) ==> True
+    iscube(0) ==> True
+    iscube(180) ==> False
+    '''
