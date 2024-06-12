@@ -1,23 +1,11 @@
-import math
 
 
-def poly(xs: list, x: float):
-    """
-    Evaluates polynomial with coefficients xs at point x.
-    return xs[0] + xs[1] * x + xs[1] * x^2 + .... xs[n] * x^n
-    """
-    return sum([coeff * math.pow(x, i) for i, coeff in enumerate(xs)])
-
-
-def find_zero(xs: list):
-    """ xs are coefficients of a polynomial.
-    find_zero find x such that poly(x) = 0.
-    find_zero returns only only zero point, even if there are many.
-    Moreover, find_zero only takes list xs having even number of coefficients
-    and largest non zero coefficient as it guarantees
-    a solution.
-    >>> round(find_zero([1, 2]), 2) # f(x) = 1 + 2x
-    -0.5
-    >>> round(find_zero([-6, 11, -6, 1]), 2) # (x - 1) * (x - 2) * (x - 3) = -6 + 11x - 6x^2 + x^3
-    1.0
+def sort_third(l: list):
+    """This function takes a list l and returns a list l' such that
+    l' is identical to l in the indicies that are not divisible by three, while its values at the indicies that are divisible by three are equal
+    to the values of the corresponding indicies of l, but sorted.
+    >>> sort_third([1, 2, 3])
+    [1, 2, 3]
+    >>> sort_third([5, 6, 3, 4, 8, 9, 2])
+    [2, 6, 3, 4, 8, 9, 5]
     """
