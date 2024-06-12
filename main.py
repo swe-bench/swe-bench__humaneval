@@ -1,9 +1,14 @@
 
 
-def median(l: list):
-    """Return median of elements in the list l.
-    >>> median([3, 1, 2, 4, 5])
-    3
-    >>> median([-10, 4, 6, 1000, 10, 20])
-    15.0
+def is_palindrome(text: str):
+    """
+    Checks if given string is a palindrome
+    >>> is_palindrome('')
+    True
+    >>> is_palindrome('aba')
+    True
+    >>> is_palindrome('aaaaa')
+    True
+    >>> is_palindrome('zbcd')
+    False
     """
