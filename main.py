@@ -1,8 +1,11 @@
 
-def string_to_md5(text):
+def generate_integers(a, b):
     """
-    Given a string 'text', return its md5 hash equivalent string.
-    If 'text' is an empty string, return None.
+    Given two positive integers a and b, return the even digits between a
+    and b, in ascending order.
 
-    >>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'
+    For example:
+    generate_integers(2, 8) => [2, 4, 6, 8]
+    generate_integers(8, 2) => [2, 4, 6, 8]
+    generate_integers(10, 14) => []
     """
