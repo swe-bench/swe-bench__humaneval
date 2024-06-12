@@ -1,10 +1,9 @@
-from typing import List
 
 
-def filter_by_prefix(strings: List[str], prefix: str) -> List[str]:
-    """ Filter an input list of strings only for ones that start with a given prefix.
-    >>> filter_by_prefix([], 'a')
-    []
-    >>> filter_by_prefix(['abc', 'bcd', 'cde', 'array'], 'a')
-    ['abc', 'array']
+def get_positive(l: list):
+    """Return only positive numbers in the list.
+    >>> get_positive([-1, 2, -4, 5, 6])
+    [2, 5, 6]
+    >>> get_positive([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])
+    [5, 3, 2, 3, 9, 123, 1]
     """
