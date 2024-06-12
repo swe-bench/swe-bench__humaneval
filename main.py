@@ -1,9 +1,11 @@
 
 
-def max_element(l: list):
-    """Return maximum element in the list.
-    >>> max_element([1, 2, 3])
+def fizz_buzz(n: int):
+    """Return the number of times the digit 7 appears in integers less than n which are divisible by 11 or 13.
+    >>> fizz_buzz(50)
+    0
+    >>> fizz_buzz(78)
+    2
+    >>> fizz_buzz(79)
     3
-    >>> max_element([5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10])
-    123
     """
