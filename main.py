@@ -1,10 +1,11 @@
 from typing import List
 
 
-def intersperse(numbers: List[int], delimeter: int) -> List[int]:
-    """ Insert a number 'delimeter' between every two consecutive elements of input list `numbers'
-    >>> intersperse([], 4)
-    []
-    >>> intersperse([1, 2, 3], 4)
-    [1, 4, 2, 4, 3]
+def parse_nested_parens(paren_string: str) -> List[int]:
+    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
+    For each of the group, output the deepest level of nesting of parentheses.
+    E.g. (()()) has maximum two levels of nesting while ((())) has three.
+
+    >>> parse_nested_parens('(()()) ((())) () ((())()())')
+    [2, 3, 1, 3]
     """
