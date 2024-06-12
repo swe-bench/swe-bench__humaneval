@@ -1,17 +1,16 @@
 
-def bf(planet1, planet2):
-    '''
-    There are eight planets in our solar system: the closerst to the Sun 
-    is Mercury, the next one is Venus, then Earth, Mars, Jupiter, Saturn, 
-    Uranus, Neptune.
-    Write a function that takes two planet names as strings planet1 and planet2. 
-    The function should return a tuple containing all planets whose orbits are 
-    located between the orbit of planet1 and the orbit of planet2, sorted by 
-    the proximity to the sun. 
-    The function should return an empty tuple if planet1 or planet2
-    are not correct planet names. 
-    Examples
-    bf("Jupiter", "Neptune") ==> ("Saturn", "Uranus")
-    bf("Earth", "Mercury") ==> ("Venus")
-    bf("Mercury", "Uranus") ==> ("Venus", "Earth", "Mars", "Jupiter", "Saturn")
-    '''
+def sorted_list_sum(lst):
+    """Write a function that accepts a list of strings as a parameter,
+    deletes the strings that have odd lengths from it,
+    and returns the resulted list with a sorted order,
+    The list is always a list of strings and never an array of numbers,
+    and it may contain duplicates.
+    The order of the list should be ascending by length of each word, and you
+    should return the list sorted by that rule.
+    If two words have the same length, sort the list alphabetically.
+    The function should return a list of strings in sorted order.
+    You may assume that all words will have the same length.
+    For example:
+    assert list_sort(["aa", "a", "aaa"]) => ["aa"]
+    assert list_sort(["ab", "a", "aaa", "cd"]) => ["ab", "cd"]
+    """
