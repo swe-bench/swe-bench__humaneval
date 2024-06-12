@@ -1,10 +1,19 @@
 
-def count_upper(s):
-    """
-    Given a string s, count the number of uppercase vowels in even indices.
-    
-    For example:
-    count_upper('aBCdEf') returns 1
-    count_upper('abcdefg') returns 0
-    count_upper('dBBE') returns 0
-    """
+def closest_integer(value):
+    '''
+    Create a function that takes a value (string) representing a number
+    and returns the closest integer to it. If the number is equidistant
+    from two integers, round it away from zero.
+
+    Examples
+    >>> closest_integer("10")
+    10
+    >>> closest_integer("15.3")
+    15
+
+    Note:
+    Rounding away from zero means that if the given number is equidistant
+    from two integers, the one you should return is the one that is the
+    farthest from zero. For example closest_integer("14.5") should
+    return 15 and closest_integer("-14.5") should return -15.
+    '''
