@@ -1,9 +1,14 @@
 
-def digits(n):
-    """Given a positive integer n, return the product of the odd digits.
-    Return 0 if all digits are even.
-    For example:
-    digits(1)  == 1
-    digits(4)  == 0
-    digits(235) == 15
-    """
+def is_nested(string):
+    '''
+    Create a function that takes a string as input which contains only square brackets.
+    The function should return True if and only if there is a valid subsequence of brackets 
+    where at least one bracket in the subsequence is nested.
+
+    is_nested('[[]]') ➞ True
+    is_nested('[]]]]]]][[[[[]') ➞ False
+    is_nested('[][]') ➞ False
+    is_nested('[]') ➞ False
+    is_nested('[[][]]') ➞ True
+    is_nested('[[]][[') ➞ True
+    '''
