@@ -1,14 +1,16 @@
 
-def select_words(s, n):
-    """Given a string s and a natural number n, you have been tasked to implement 
-    a function that returns a list of all words from string s that contain exactly 
-    n consonants, in order these words appear in the string s.
-    If the string s is empty then the function should return an empty list.
-    Note: you may assume the input string contains only letters and spaces.
-    Examples:
-    select_words("Mary had a little lamb", 4) ==> ["little"]
-    select_words("Mary had a little lamb", 3) ==> ["Mary", "lamb"]
-    select_words("simple white space", 2) ==> []
-    select_words("Hello world", 4) ==> ["world"]
-    select_words("Uncle sam", 3) ==> ["Uncle"]
+def get_closest_vowel(word):
+    """You are given a word. Your task is to find the closest vowel that stands between 
+    two consonants from the right side of the word (case sensitive).
+    
+    Vowels in the beginning and ending doesn't count. Return empty string if you didn't
+    find any vowel met the above condition. 
+
+    You may assume that the given string contains English letter only.
+
+    Example:
+    get_closest_vowel("yogurt") ==> "u"
+    get_closest_vowel("FULL") ==> "U"
+    get_closest_vowel("quick") ==> ""
+    get_closest_vowel("ab") ==> ""
     """
