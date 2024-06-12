@@ -1,9 +1,13 @@
-from typing import List
+from typing import List, Optional
 
 
-def string_xor(a: str, b: str) -> str:
-    """ Input are two strings a and b consisting only of 1s and 0s.
-    Perform binary XOR on these inputs and return result also as a string.
-    >>> string_xor('010', '110')
-    '100'
+def longest(strings: List[str]) -> Optional[str]:
+    """ Out of list of strings, return the longest one. Return the first one in case of multiple
+    strings of the same length. Return None in case the input list is empty.
+    >>> longest([])
+
+    >>> longest(['a', 'b', 'c'])
+    'a'
+    >>> longest(['a', 'bb', 'ccc'])
+    'ccc'
     """
