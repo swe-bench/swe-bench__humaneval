@@ -1,11 +1,10 @@
 from typing import List
 
 
-def parse_nested_parens(paren_string: str) -> List[int]:
-    """ Input to this function is a string represented multiple groups for nested parentheses separated by spaces.
-    For each of the group, output the deepest level of nesting of parentheses.
-    E.g. (()()) has maximum two levels of nesting while ((())) has three.
-
-    >>> parse_nested_parens('(()()) ((())) () ((())()())')
-    [2, 3, 1, 3]
+def filter_by_substring(strings: List[str], substring: str) -> List[str]:
+    """ Filter an input list of strings only for ones that contain given substring
+    >>> filter_by_substring([], 'a')
+    []
+    >>> filter_by_substring(['abc', 'bacd', 'cde', 'array'], 'a')
+    ['abc', 'bacd', 'array']
     """
