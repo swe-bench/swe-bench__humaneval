@@ -1,12 +1,9 @@
 
-def order_by_points(nums):
-    """
-    Write a function which sorts the given list of integers
-    in ascending order according to the sum of their digits.
-    Note: if there are several items with similar sum of their digits,
-    order them based on their index in original list.
-
+def specialFilter(nums):
+    """Write a function that takes an array of numbers as input and returns 
+    the number of elements in the array that are greater than 10 and both 
+    first and last digits of a number are odd (1, 3, 5, 7, 9).
     For example:
-    >>> order_by_points([1, 11, -1, -11, -12]) == [-1, -11, 1, -12, 11]
-    >>> order_by_points([]) == []
+    specialFilter([15, -73, 14, -15]) => 1 
+    specialFilter([33, -2, -3, 45, 21, 109]) => 2
     """
