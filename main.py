@@ -1,17 +1,10 @@
 
-FIX = """
-Add more test cases.
-"""
-
-def vowels_count(s):
-    """Write a function vowels_count which takes a string representing
-    a word as input and returns the number of vowels in the string.
-    Vowels in this case are 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a
-    vowel, but only when it is at the end of the given word.
-
-    Example:
-    >>> vowels_count("abcde")
-    2
-    >>> vowels_count("ACEDY")
-    3
+def circular_shift(x, shift):
+    """Circular shift the digits of the integer x, shift the digits right by shift
+    and return the result as a string.
+    If shift > number of digits, return digits reversed.
+    >>> circular_shift(12, 1)
+    "21"
+    >>> circular_shift(12, 2)
+    "12"
     """
