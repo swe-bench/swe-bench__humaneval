@@ -1,13 +1,12 @@
 
-def special_factorial(n):
-    """The Brazilian factorial is defined as:
-    brazilian_factorial(n) = n! * (n-1)! * (n-2)! * ... * 1!
-    where n > 0
-
-    For example:
-    >>> special_factorial(4)
-    288
-
-    The function will receive an integer as input and should return the special
-    factorial of this integer.
+def fix_spaces(text):
+    """
+    Given a string text, replace all spaces in it with underscores, 
+    and if a string has more than 2 consecutive spaces, 
+    then replace all consecutive spaces with - 
+    
+    fix_spaces("Example") == "Example"
+    fix_spaces("Example 1") == "Example_1"
+    fix_spaces(" Example 2") == "_Example_2"
+    fix_spaces(" Example   3") == "_Example-3"
     """
