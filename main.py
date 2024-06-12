@@ -1,24 +1,11 @@
 
-def even_odd_palindrome(n):
+def count_nums(arr):
     """
-    Given a positive integer n, return a tuple that has the number of even and odd
-    integer palindromes that fall within the range(1, n), inclusive.
-
-    Example 1:
-
-        Input: 3
-        Output: (1, 2)
-        Explanation:
-        Integer palindrome are 1, 2, 3. one of them is even, and two of them are odd.
-
-    Example 2:
-
-        Input: 12
-        Output: (4, 6)
-        Explanation:
-        Integer palindrome are 1, 2, 3, 4, 5, 6, 7, 8, 9, 11. four of them are even, and 6 of them are odd.
-
-    Note:
-        1. 1 <= n <= 10^3
-        2. returned tuple has the number of even and odd integer palindromes respectively.
+    Write a function count_nums which takes an array of integers and returns
+    the number of elements which has a sum of digits > 0.
+    If a number is negative, then its first signed digit will be negative:
+    e.g. -123 has signed digits -1, 2, and 3.
+    >>> count_nums([]) == 0
+    >>> count_nums([-1, 11, -11]) == 1
+    >>> count_nums([1, 1, 2]) == 3
     """
