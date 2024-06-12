@@ -1,13 +1,18 @@
 
 
-def encode_shift(s: str):
+def remove_vowels(text):
     """
-    returns encoded string by shifting every character by 5 in the alphabet.
-    """
-    return "".join([chr(((ord(ch) + 5 - ord("a")) % 26) + ord("a")) for ch in s])
-
-
-def decode_shift(s: str):
-    """
-    takes as input string encoded with encode_shift function. Returns decoded string.
+    remove_vowels is a function that takes string and returns string without vowels.
+    >>> remove_vowels('')
+    ''
+    >>> remove_vowels("abcdef\nghijklm")
+    'bcdf\nghjklm'
+    >>> remove_vowels('abcdef')
+    'bcdf'
+    >>> remove_vowels('aaaaa')
+    ''
+    >>> remove_vowels('aaBAA')
+    'B'
+    >>> remove_vowels('zbcd')
+    'zbcd'
     """
