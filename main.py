@@ -1,8 +1,12 @@
 
-def even_odd_count(num):
-    """Given an integer. return a tuple that has the number of even and odd digits respectively.
+def int_to_mini_roman(number):
+    """
+    Given a positive integer, obtain its roman numeral equivalent as a string,
+    and return it in lowercase.
+    Restrictions: 1 <= num <= 1000
 
-     Example:
-        even_odd_count(-12) ==> (1, 1)
-        even_odd_count(123) ==> (1, 2)
+    Examples:
+    >>> int_to_mini_roman(19) == 'xix'
+    >>> int_to_mini_roman(152) == 'clii'
+    >>> int_to_mini_roman(426) == 'cdxxvi'
     """
