@@ -1,18 +1,9 @@
 
 
-def remove_vowels(text):
-    """
-    remove_vowels is a function that takes string and returns string without vowels.
-    >>> remove_vowels('')
-    ''
-    >>> remove_vowels("abcdef\nghijklm")
-    'bcdf\nghjklm'
-    >>> remove_vowels('abcdef')
-    'bcdf'
-    >>> remove_vowels('aaaaa')
-    ''
-    >>> remove_vowels('aaBAA')
-    'B'
-    >>> remove_vowels('zbcd')
-    'zbcd'
+def below_threshold(l: list, t: int):
+    """Return True if all numbers in the list l are below threshold t.
+    >>> below_threshold([1, 2, 4, 10], 100)
+    True
+    >>> below_threshold([1, 20, 4, 10], 5)
+    False
     """
