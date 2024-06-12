@@ -1,14 +1,21 @@
 
+def words_in_sentence(sentence):
+    """
+    You are given a string representing a sentence,
+    the sentence contains some words separated by a space,
+    and you have to return a string that contains the words from the original sentence,
+    whose lengths are prime numbers,
+    the order of the words in the new string should be the same as the original one.
 
+    Example 1:
+        Input: sentence = "This is a test"
+        Output: "is"
 
-def sum_squares(lst):
-    """"
-    This function will take a list of integers. For all entries in the list, the function shall square the integer entry if its index is a 
-    multiple of 3 and will cube the integer entry if its index is a multiple of 4 and not a multiple of 3. The function will not 
-    change the entries in the list whose indexes are not a multiple of 3 or 4. The function shall then return the sum of all entries. 
-    
-    Examples:
-    For lst = [1,2,3] the output should be 6
-    For lst = []  the output should be 0
-    For lst = [-1,-5,2,-1,-5]  the output should be -126
+    Example 2:
+        Input: sentence = "lets go for swimming"
+        Output: "go for"
+
+    Constraints:
+        * 1 <= len(sentence) <= 100
+        * sentence contains only letters
     """
