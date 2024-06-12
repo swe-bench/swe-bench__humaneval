@@ -1,19 +1,15 @@
 
-def any_int(x, y, z):
-    '''
-    Create a function that takes 3 numbers.
-    Returns true if one of the numbers is equal to the sum of the other two, and all numbers are integers.
-    Returns false in any other cases.
+def encode(message):
+    """
+    Write a function that takes a message, and encodes in such a 
+    way that it swaps case of all letters, replaces all vowels in 
+    the message with the letter that appears 2 places ahead of that 
+    vowel in the english alphabet. 
+    Assume only letters. 
     
-    Examples
-    any_int(5, 2, 7) ➞ True
-    
-    any_int(3, 2, 2) ➞ False
-
-    any_int(3, -2, 1) ➞ True
-    
-    any_int(3.6, -2.2, 2) ➞ False
-  
-
-    
-    '''
+    Examples:
+    >>> encode('test')
+    'TGST'
+    >>> encode('This is a message')
+    'tHKS KS C MGSSCGG'
+    """
